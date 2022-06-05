@@ -167,14 +167,10 @@ def plot_losses(history):
 
 if __name__ == "__main__":
     # train and test data directory
-    data_dir = "./seg_train/seg_train"
-    test_data_dir = "./seg_test/seg_test"
+    data_dir = "../dataset"
 
     # load the train and test data
     dataset = ImageFolder(data_dir, transform=transforms.Compose([
-        transforms.Resize((150, 150)), transforms.ToTensor()
-    ]))
-    test_dataset = ImageFolder(test_data_dir, transforms.Compose([
         transforms.Resize((150, 150)), transforms.ToTensor()
     ]))
 
@@ -190,8 +186,8 @@ if __name__ == "__main__":
     # ['buildings', 'forest', 'glacier', 'mountain', 'sea', 'street']
 
     # Splitting Data and Prepare Batches:
-    batch_size = 128
-    val_size = 2000
+    batch_size = 64
+    val_size = 200
     train_size = len(dataset) - val_size
 
     train_data, val_data = random_split(dataset, [train_size, val_size])
@@ -204,7 +200,7 @@ if __name__ == "__main__":
 
     # load the train and validation into batches.
     train_dl = DataLoader(train_data, batch_size, shuffle=True, num_workers=4, pin_memory=True)
-    val_dl = DataLoader(val_data, batch_size * 2, num_workers=4, pin_memory=True)
+    val_dl = DataLoader(val_data, batch_size, num_workers=4, pin_memory=True)
 
     model=NaturalSceneClassification()
     num_epochs = 30
