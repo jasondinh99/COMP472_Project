@@ -167,8 +167,8 @@ def plot_losses(history):
 
 if __name__ == "__main__":
     # train and test data directory
-    data_dir = "C:/Users/Axel/Desktop/newwine/comp 472/project/cnn1/seg_train/seg_train"
-    test_data_dir = "C:/Users/Axel/Desktop/newwine/comp 472/project/cnn1/seg_test/seg_test"
+    data_dir = "./seg_train/seg_train"
+    test_data_dir = "./seg_test/seg_test"
 
     # load the train and test data
     dataset = ImageFolder(data_dir, transform=transforms.Compose([
