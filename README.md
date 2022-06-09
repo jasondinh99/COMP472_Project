@@ -1,7 +1,13 @@
 # COMP472_Project
 
-Content of Submission
+## Team (NS_07)
+- Jason Dinh (40129138) - Data Specialist
+- Axel Dzeukou (40089940) - Training Specialist
+- Vyacheslav Medvedenko (40134207) - Evaluation Specialist
+- Dante Di Domenico (40125704) - Compliance Specialist
 
+
+## Content of Submission
 ```
 root
 │   README.md				readme file
