@@ -58,11 +58,11 @@ root
 └───sample-dataset			a subset of size 100 of the full dataset 
 │	Image_References.txt		link references for the dataset
 |	└───cloth_mask
-│	|	401 images
+│	|	25 images
 |	└───n95_mask
-│	|	410 images
+│	|	25 images
 |	└───no_mask
-│	|	420 images
+│	|	25 images
 |	└───surgical_mask
-│	|	400 images
+│	|	25 images
 ```
