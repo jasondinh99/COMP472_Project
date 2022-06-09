@@ -221,7 +221,7 @@ if __name__ == "__main__":
     #sample directory
     sample_dir = "./sample-dataset"
 
-    request = input('do you want to train the base model')
+    request = input('Do you want to train the base model? (yes/no) : ')
 
     if request == 'yes':
         # Preparing the Dataset :
