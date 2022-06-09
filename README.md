@@ -8,8 +8,9 @@
 
 ## Instruction
 All our code are in 'main.py' file in the root folder. To get this code run correctly, you need to install the following packages:
-- Pytorch
-- 
+- PyTorch
+- TorchVision
+- sklearn
 
 #### IMPORTANT: Getting the Trained Model
 ###### We cannot include out trained model in the Moodle submission and on Git because the size is too large for both (350+ MB). Please download the model from our Google Drive and save it in the root folder (the same folder as the 'main.py' file). Link below:
@@ -24,7 +25,7 @@ When you run 'main.py', initially, the code will ask you if you would want to tr
 
 
 ## Dataset
-The Moodle submission only contains the sample dataset with 100 images (25 images per catergory). You can get the full dataset from this repository in the 'dataset' folder
+The Moodle submission only contains the sample dataset with 100 images (25 images per catergory). You can get the full dataset from this repository in the 'dataset' folder, which contains over 1600 images.
 
 
 ## Content of Submission
@@ -32,6 +33,8 @@ The Moodle submission only contains the sample dataset with 100 images (25 image
 root
 │   README.md				readme file
 |   main.py					python file that has all the code of the project
+|   NS07_COMP472_Report.pdf   	Project Part 1 Report
+|   NS_07_COMP472_Expectations-of-Originality.pdf
 │
 └───dataset               		complete dataset
 │	Image_References.txt		link references for the dataset
@@ -59,5 +62,3 @@ root
 |	└───surgical_mask
 │	|	400 images
 ```
-
-
