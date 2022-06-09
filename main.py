@@ -106,7 +106,7 @@ def fit(epochs, lr, model, train_loader, val_loader, opt_func):
         history.append(result)
         if result['val_acc'] >= 0.60:
             # To save a model:
-            torch.save(model.state_dict(),"C:/Users/Axel\Desktop/newwine/comp 472/project/demo_model.sav")
+            torch.save(model.state_dict(),"./demo_model.sav")
             return history
 
     print("desired accuracy wasnt obtained ")
@@ -217,9 +217,9 @@ def test(model, test_dl):
 
 if __name__ == "__main__":
     # train and test directory
-    data_dir = "C:/Users/Axel/Desktop/newwine/comp 472/project/COMP472_Project/dataset"
+    data_dir = "./dataset"
     #sample directory
-    sample_dir = "C:/Users/Axel/Desktop/newwine/comp 472/project/COMP472_Project/sample-dataset"
+    sample_dir = "./sample-dataset"
 
     request = input('do you want to train the base model')
 
@@ -273,7 +273,7 @@ if __name__ == "__main__":
 
         # To restore a model:
         model = FaceMaskClassification()
-        model.load_state_dict(torch.load("C:/Users/Axel/Desktop/newwine/comp 472/project/demo_model.sav"), strict=False)
+        model.load_state_dict(torch.load("./demo_model.sav"), strict=False)
 
         # run the model on test
         print('\nEvaluation:')
@@ -289,7 +289,7 @@ if __name__ == "__main__":
 
         # To restore a model:
         model = FaceMaskClassification()
-        model.load_state_dict(torch.load("C:/Users/Axel/Desktop/newwine/comp 472/project/finalized_model.sav"),
+        model.load_state_dict(torch.load("./finalized_model.sav"),
                               strict=False)
 
         # run the model on sample
