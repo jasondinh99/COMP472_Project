@@ -11,13 +11,13 @@ The Moodle submission only contains the sample dataset with 100 images (25 image
 
 ## Trained Model
 We cannot include out trained model in the Moodle submission and on Git because the size is too large for both (350+ MB). Please download the model from our Google Drive. Link below:
-'''
+```
 Untrained model
 https://drive.google.com/file/d/1vSstFpTDIg10uWKO63hi-ZseQmdj2XDq/view?usp=sharing
 
 Trained model
 https://drive.google.com/file/d/1RteV9Hwqbqr8MRca4xAm5OW3FatnXcCT/view?usp=sharing
-'''
+```
 
 ## Content of Submission
 ```
