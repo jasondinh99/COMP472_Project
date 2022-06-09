@@ -36,7 +36,7 @@ root
 │   README.md				readme file
 |   main.py					python file that has all the code of the project
 │
-└───dataset               complete dataset
+└───dataset               		complete dataset
 │	Image_References.txt		link references for the dataset
 |	|
 |	└───cloth_mask
