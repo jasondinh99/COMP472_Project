@@ -2,6 +2,7 @@
 
 Content of Submission
 
+...
 root
 │   README.md				readme file
 |   main.py					python file that has all the code of the project
@@ -31,3 +32,4 @@ root
 │	|	420 images
 |	└───surgical_mask
 │	|	400 images
+...
